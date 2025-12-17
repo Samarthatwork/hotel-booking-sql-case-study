@@ -64,3 +64,12 @@ Full problem statements and SQL solutions are available in the repository.
 - Window functions (RANK, COUNT OVER, SUM OVER)  
 - Recursive CTEs for date expansion  
 - Time-based occupancy and capacity analysis
+
+
+## Key Insights
+
+- A segment of customers shows strong same-city booking behavior, indicating location-based loyalty opportunities.
+- Female customers contribute nearly half of total bookings and revenue across hotels.
+- Cross-state travel demand is significant for all hotels.
+- Occupancy peaks are concentrated on specific dates, suggesting scope for dynamic pricing.
+- Booking channel performance varies by hotel and month, highlighting the need for diversified channel strategies.
