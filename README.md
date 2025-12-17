@@ -35,7 +35,7 @@ This case study answers 14 real-world business questions, including:
 
 Full problem statements and SQL solutions are available in the repository.
 
-## SQL Concepts Demonstrated
+## Key SQL Concepts Demonstrated
 
 - Multi-table joins across normalized schemas  
 - Conditional aggregation using CASE WHEN  
