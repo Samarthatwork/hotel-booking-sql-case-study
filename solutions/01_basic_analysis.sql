@@ -19,7 +19,7 @@ GROUP BY hb.customer_id
 ORDER BY same_city_bookings DESC, same_city_booking_perc DESC;
 
 /*
-03. Cross-State Customer Bookings
+02. Cross-State Customer Bookings
 For each hotel, find the number of bookings made by customers
 who visited from a different state.
 */

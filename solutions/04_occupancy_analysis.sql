@@ -1,5 +1,5 @@
 /*
-04. Peak Occupancy Date per Hotel
+01. Peak Occupancy Date per Hotel
 Find the date when occupancy was maximum for each hotel.
 A customer is not considered present on the checkout date.
 */
@@ -53,10 +53,8 @@ FROM (
 WHERE rn = 1
 ORDER BY hotel_id;
 
-
-
 /*
-06. Monthly Occupancy Rate per Hotel
+02. Monthly Occupancy Rate per Hotel
 Calculate monthly occupancy percentage for each hotel.
 */
 
@@ -83,10 +81,8 @@ SELECT DISTINCT
 FROM daily_data
 ORDER BY hotel_id, stay_month;
 
-
-
 /*
-07. Fully Occupied Dates
+03. Fully Occupied Dates
 Find dates when hotels were fully occupied.
 */
 

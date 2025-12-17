@@ -1,5 +1,5 @@
 /*
-02. Customers Visiting Multiple States
+01. Customers Visiting Multiple States
 Find customers who have booked hotels in at least three different states.
 */
 
@@ -13,10 +13,8 @@ JOIN cities ci ON h.city_id = ci.id
 GROUP BY c.customer_id
 HAVING COUNT(DISTINCT ci.state) >= 3;
 
-
-
 /*
-13. Customers with No Bookings
+02. Customers with No Bookings
 Identify customers who have never made any hotel booking.
 */
 
@@ -28,10 +26,8 @@ WHERE customer_id NOT IN (
     FROM hotel_bookings
 );
 
-
-
 /*
-14. Multi-Hotel Stays in Same Month
+03. Multi-Hotel Stays in Same Month
 Find customers who stayed in at least three distinct hotels
 within the same month.
 */

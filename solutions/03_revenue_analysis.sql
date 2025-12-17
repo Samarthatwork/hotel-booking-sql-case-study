@@ -1,5 +1,5 @@
 /*
-02. Female Contribution by Hotel
+01. Female Contribution by Hotel
 Calculate the percentage contribution by female customers
 in terms of bookings and revenue for each hotel.
 */
@@ -21,10 +21,8 @@ FROM hotel_bookings hb
 JOIN customers c ON hb.customer_id = c.customer_id
 GROUP BY hb.hotel_id;
 
-
-
 /*
-08. Highest Revenue Booking Channel
+02. Highest Revenue Booking Channel
 For each hotel and each month, find the booking channel
 that generated the highest revenue.
 */
@@ -53,10 +51,8 @@ FROM (
 WHERE rn = 1
 ORDER BY hotel_id, booking_month;
 
-
-
 /*
-09. Booking Channel Share
+03. Booking Channel Share
 Find the percentage share of total bookings
 contributed by each booking channel.
 */
