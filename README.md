@@ -4,6 +4,9 @@ This repository contains an end-to-end SQL case study analyzing hotel booking da
 
 The project focuses on solving real-world business questions related to customer behavior, booking patterns, revenue contribution, occupancy trends, and operational performance using SQL.
 
+> **Where to start:** 
+Review the business problems in [`questions/`](questions), then explore the corresponding SQL solutions in [`solutions/`](solutions).
+
 ## Repository Structure
 
 - 📄 **Problem Statements**  
