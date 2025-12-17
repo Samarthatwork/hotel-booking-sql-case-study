@@ -2,6 +2,8 @@
 01. Same-City Bookings by Customers
 Find the top 5 customers who made the highest number of bookings
 in the same city where they live.
+Display the customer ID and the percent of those bookings compared to the total number of bookings done by them.
+In case of a tie, prefer the customers with a higher same-city booking percent
 */
 
 SELECT TOP 5 
