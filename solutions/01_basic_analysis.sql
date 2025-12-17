@@ -17,3 +17,21 @@ JOIN customers c ON hb.customer_id = c.customer_id
 JOIN hotels h ON hb.hotel_id = h.id
 GROUP BY hb.customer_id
 ORDER BY same_city_bookings DESC, same_city_booking_perc DESC;
+
+/*
+03. Cross-State Customer Bookings
+For each hotel, find the number of bookings made by customers
+who visited from a different state.
+*/
+
+SELECT 
+    hb.hotel_id,
+    COUNT(*) AS different_state_bookings
+FROM hotel_bookings hb
+JOIN hotels h ON hb.hotel_id = h.id
+JOIN cities hotel_city ON h.city_id = hotel_city.id
+JOIN customers c ON hb.customer_id = c.customer_id
+JOIN cities customer_city ON c.city_id = customer_city.id
+WHERE hotel_city.state <> customer_city.state
+GROUP BY hb.hotel_id
+ORDER BY hb.hotel_id;
